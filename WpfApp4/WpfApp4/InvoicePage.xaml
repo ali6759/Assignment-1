@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp4.InvoicePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="InvoicePage" Height="450" Width="800">
+    <Grid Loaded="Grid_Loaded">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="143*"/>
+            <ColumnDefinition Width="57*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="TxtInvoiceNum" IsEnabled="false" HorizontalAlignment="Left" Margin="366,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" RenderTransformOrigin="0.488,3.071" FontSize="16" Height="45"/>
+        <TextBox x:Name="TxtPriceTotal" HorizontalAlignment="Left" Margin="366,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" Height="45" FontSize="16"/>
+        <Button Content="Save" HorizontalAlignment="Left" Margin="26,350,0,0" VerticalAlignment="Top" Height="42" Width="120" FontSize="16" Click="Button_Click" RenderTransformOrigin="0.47,1.223" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="159,60,0,0" TextWrapping="Wrap" Text="Invoice Number" VerticalAlignment="Top" RenderTransformOrigin="0.419,-1.029" Height="31" Width="152" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="159,116,0,0" TextWrapping="Wrap" Text="Invoice Date" VerticalAlignment="Top" Width="152" Height="45" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="159,178,0,0" TextWrapping="Wrap" Text="Total Price" VerticalAlignment="Top" Width="174" Height="39" FontSize="16"/>
+        <Button x:Name="AddInvoice" Content="New" HorizontalAlignment="Left" Margin="33,359,0,0" VerticalAlignment="Top" Height="38" Width="110" Click="AddInvoice_Click"/>
+        <DatePicker Name="DateInvoice" HorizontalAlignment="Left" Margin="366,114,0,0" VerticalAlignment="Top" Height="35" Width="167"/>
+
+    </Grid>
+</Window>

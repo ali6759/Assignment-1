@@ -1,0 +1,16 @@
+﻿<Window x:Class="WpfApp4.MainWindow1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="MainWindow1" Height="450" Width="800">
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="1">
+            <Button Content="Show Admin Page" Margin="25,25,581,360" Click="Button_Click"/>
+        </Border>
+        <Button Content="Show Invoice " Margin="25,85,583,300" Click="Invoice_Click"/>
+
+    </Grid>
+</Window>
